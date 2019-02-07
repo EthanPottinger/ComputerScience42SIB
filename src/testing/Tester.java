@@ -1,4 +1,3 @@
-/** required package class namespace */
 package testing;
 
 import testing.advancedclasses.AdvancedClassesTest;
@@ -12,8 +11,7 @@ import testing.searchsort.SearchSortTest;
  * @author Mr. Wachs 
  * @since 24-Sep-2018 
  */
-public class Tester 
-{
+public class Tester {
 
     /**
      * Default class constructor, runs on instantiation
@@ -25,6 +23,5 @@ public class Tester
 //        CollectionsTest     unit3 = new CollectionsTest();
         SearchSortTest      unit4 = new SearchSortTest();
         System.out.println("\nTesting complete!\n");
-    }
-    
+    } 
 }

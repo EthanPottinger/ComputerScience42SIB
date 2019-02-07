@@ -1,8 +1,5 @@
-
-/** required package class namespace */
 package collections;
 
-/** required imports */
 import java.lang.reflect.Array;
 
 
@@ -15,8 +12,7 @@ import java.lang.reflect.Array;
  * @since 16-Nov-2018 
  * @instructor Mr. Wachs
  */
-public class LinkedList <T>
-{
+public class LinkedList <T> {
 
     /** 
      * The number of nodes in the list 

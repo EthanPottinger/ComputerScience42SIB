@@ -1,7 +1,4 @@
-
-/** required package class namespace */
 package collections;
-
 
 /**
  * Node.java - a representation of a generic node for use with
@@ -11,8 +8,7 @@ package collections;
  * @param <T> The generic data type used in the class
  * @since 16-Nov-2018 
  */
-public class Node <T>
-{
+public class Node <T> {
 
     /**
      * The generic data stored in the node
