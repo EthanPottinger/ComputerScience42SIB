@@ -1,6 +1,6 @@
 package testing;
 
-import numbers.Calculator;
+import tools.Calculator;
 
 /**
  * RecursionTest.java - the unit test to test the concept of recursion

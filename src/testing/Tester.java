@@ -4,7 +4,6 @@ import testing.advancedclasses.AdvancedClassesTest;
 import testing.collections.CollectionsTest;
 import testing.searchsort.SearchSortTest;
 
-
 /**
  * Tester.java - the unit testing class that drives the various unit tests
  *
@@ -13,9 +12,6 @@ import testing.searchsort.SearchSortTest;
  */
 public class Tester {
 
-    /**
-     * Default class constructor, runs on instantiation
-     */
     public Tester() {
         System.out.println("\nTesting begins.....\n");        
 //        RecursionTest       unit1 = new RecursionTest();

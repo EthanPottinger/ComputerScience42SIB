@@ -1,9 +1,6 @@
-
-/** required package class namespace */
 package mainpackage;
 
 import testing.Tester;
-
 
 /**
  * MainClass.java - the large in class example we continue to work 
@@ -15,8 +12,7 @@ import testing.Tester;
  * @since February 7, 2019 
  * @instructor Mr. Wachs
  */
-public class MainClass 
-{
+public class MainClass {
 
     /**
      * Main method for the project
