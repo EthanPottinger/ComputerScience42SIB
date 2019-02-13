@@ -12,7 +12,7 @@ import java.lang.reflect.Array;
  * @since 16-Nov-2018 
  * @instructor Mr. Wachs
  */
-public class LinkedList <T> {
+public class LinkedList <T extends Comparable<T>> implements Comparable<LinkedList> {
 
     /** 
      * The number of nodes in the list 
@@ -735,6 +735,11 @@ public class LinkedList <T> {
             }
             return current;                             // return reference
         }
+    }
+
+    @Override
+    public int compareTo(LinkedList o) {
+        return 0;
     }
     
 }

@@ -10,8 +10,7 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since 5-Nov-2018 
  */
-public class Athlete extends Husky implements Soccer, War, PermissionForm
-{
+public class Athlete extends Husky implements Soccer, War, PermissionForm, Comparable<Athlete> {
     
     private String homeName;
     private String opponentName;
@@ -168,6 +167,13 @@ public class Athlete extends Husky implements Soccer, War, PermissionForm
     @Override
     public boolean hasBeenSigned() {
         return havePermission;
+    }
+
+    @Override
+    public int compareTo(Athlete that) {
+        if(this.age > that.age) return 1; 
+        if(this.age < that.age) return -1;
+        return 0;
     }
 
 }

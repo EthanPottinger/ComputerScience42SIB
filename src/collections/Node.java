@@ -1,5 +1,7 @@
 package collections;
 
+import java.io.Serializable;
+
 /**
  * Node.java - a representation of a generic node for use with
  * a LinkedList object
@@ -8,7 +10,7 @@ package collections;
  * @param <T> The generic data type used in the class
  * @since 16-Nov-2018 
  */
-public class Node <T> {
+public class Node <T extends Comparable<T>> implements Comparable {
 
     /**
      * The generic data stored in the node
@@ -108,6 +110,11 @@ public class Node <T> {
     public void finalize() {
         data = null;
         next = previous = null;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 
 }

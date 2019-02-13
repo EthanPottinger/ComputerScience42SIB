@@ -23,10 +23,12 @@ public class Searcher <T> {
     }
 
     public int linearSearch(LinkedList list, T item) {
-        for(int i = 0; i < list.size(); i++) {
-            if(item.equals(list.get(i))) return i;
-        }
-        return NOT_FOUND;
+        return linearRecursive(list, item, 0);
+    }
+    private int linearRecursive(LinkedList list, T item, int i) {
+        if(list.get(i).equals(item)) return i;
+        if(i >= list.size()) return NOT_FOUND;
+        return linearRecursive(list, item, i + 1);
     }
     
     public int binarySearch(T[] array, T item) {
