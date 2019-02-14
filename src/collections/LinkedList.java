@@ -1,5 +1,8 @@
+
+/** required package class namespace */
 package collections;
 
+/** required imports */
 import java.lang.reflect.Array;
 
 
@@ -12,7 +15,8 @@ import java.lang.reflect.Array;
  * @since 16-Nov-2018 
  * @instructor Mr. Wachs
  */
-public class LinkedList <T extends Comparable<T>> implements Comparable<LinkedList> {
+public class LinkedList <T> implements Comparable<LinkedList>
+{
 
     /** 
      * The number of nodes in the list 
@@ -737,8 +741,19 @@ public class LinkedList <T extends Comparable<T>> implements Comparable<LinkedLi
         }
     }
 
+    /**
+     * Compares two objects lexicographically
+     *
+     * @param object the other object to be compared to
+     * @return the value 0 if the argument that is equal to
+     *         this object; a value less than 0 if this object
+     *         is lexicographically less than that argument; and a
+     *         value greater than 0 if this object is
+     *         lexicographically greater than that argument
+     */
     @Override
-    public int compareTo(LinkedList o) {
+    public int compareTo(LinkedList object) {
+        // TO DO !!!!
         return 0;
     }
     

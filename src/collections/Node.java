@@ -1,6 +1,7 @@
+
+/** required package class namespace */
 package collections;
 
-import java.io.Serializable;
 
 /**
  * Node.java - a representation of a generic node for use with
@@ -10,7 +11,8 @@ import java.io.Serializable;
  * @param <T> The generic data type used in the class
  * @since 16-Nov-2018 
  */
-public class Node <T extends Comparable<T>> implements Comparable {
+public class Node <T> implements Comparable<Node>
+{
 
     /**
      * The generic data stored in the node
@@ -112,8 +114,19 @@ public class Node <T extends Comparable<T>> implements Comparable {
         next = previous = null;
     }
 
+    /**
+     * Compares two objects lexicographically
+     *
+     * @param object the other object to be compared to
+     * @return the value 0 if the argument that is equal to
+     *         this object; a value less than 0 if this object
+     *         is lexicographically less than that argument; and a
+     *         value greater than 0 if this object is
+     *         lexicographically greater than that argument
+     */
     @Override
-    public int compareTo(Object o) {
+    public int compareTo(Node object) {
+        // TO DO !!!!
         return 0;
     }
 
