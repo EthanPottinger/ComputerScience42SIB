@@ -71,11 +71,34 @@ public class Sorter <T extends Comparable <T>>
     
 
     public void selectionSort(T[] array) {
-        // TO DO !!!!
+        for(int i = 0; i < array.length - 1; i++) {
+            int lowest = i;
+            for(int j = i + 1; j < array.length; j++) {
+                if(array[j].compareTo(array[lowest]) < 0) lowest = j;
+            }
+            if(lowest != i) {
+                T temp = array[i];
+                array[i] = array[lowest];
+                array[lowest] = temp;
+            }
+        }
     }
     
     public void selectionSort(LinkedList<T> list) {
-        // TO DO !!!!
+        for(int i = 0; i < list.size() - 1; i++) {
+            int lowest = i;
+            for(int j = i + 1; j < list.size(); j++) {
+                 T item1 = list.get(j);
+                 T item2 = list.get(lowest);
+                if(item1.compareTo(item2) < 0) lowest = j;
+            }
+            if(lowest != i) {
+                T item1 = list.get(i);
+                T item2 = list.get(lowest);
+                list.set(i, item2);
+                list.set(lowest, item1);
+            }
+        }
     }        
 
 }

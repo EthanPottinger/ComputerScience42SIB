@@ -12,7 +12,7 @@ import collections.LinkedList;
  * @author Mr. Wachs 
  * @since 7-Feb-2019 
  */
-public class Searcher <T>
+public class Searcher <T extends Comparable<T>>
 {
 
     /** Indicates the item being searched for is not found */
@@ -78,8 +78,15 @@ public class Searcher <T>
     
         
     public int binarySearch(T[] array, T item) {
-        // TO DO !!!
-        return 0;
+        int high = array.length - 1;
+        int low = 0;
+        while(low <= high) {
+            int mid = (high + low) / 2;
+            if(array[mid].compareTo(item) == 0) return mid;
+            else if(array[mid].compareTo(item) > 0) high = mid - 1;
+            else if(array[mid].compareTo(item) < 0) low = mid + 1;
+        }
+        return NOT_FOUND;
     }
 
     public int binarySearch(LinkedList list, T item) {
