@@ -6,6 +6,7 @@ import testing.advancedclasses.AdvancedClassesTest;
 import testing.collections.CollectionsTest;
 import testing.permanentstorage.PermanentStorageTest;
 import testing.searchsort.SearchSortTest;
+import testing.stacksqueues.StacksQueuesTest;
 
 
 /**
@@ -28,8 +29,8 @@ public class Tester
 //        AdvancedClassesTest unit2 = new AdvancedClassesTest();
 //        CollectionsTest     unit3 = new CollectionsTest();
 //        SearchSortTest      unit4 = new SearchSortTest();        
-        PermanentStorageTest unit5 = new PermanentStorageTest();
-        
+//        PermanentStorageTest unit5 = new PermanentStorageTest();
+        StacksQueuesTest unit6 = new StacksQueuesTest();
         
         
         Output.header("All unit testing",false,true);        
